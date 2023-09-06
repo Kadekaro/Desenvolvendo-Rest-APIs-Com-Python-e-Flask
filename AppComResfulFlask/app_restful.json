@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "1d2f73f4-046b-49c9-9e80-509ee15109f5",
+		"name": "app_restful",
+		"description": "_**Criando uma RESTFUL API com Flask**_",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16632138"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:5000/dev/3/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/dev/3/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"dev",
+						"3",
+						""
+					]
+				},
+				"description": "O método GET aqui trás o desenvolvedor pelo ID"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/dev/3/",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 3,\r\n    \"name\": \"Marcos\",\r\n    \"idade\": 40,\r\n    \"habilidades\": [\r\n        \"Python\",\r\n        \"Automação\",\r\n        \"Deep Learning\",\r\n        \"Machine Learning\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/dev/3/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"dev",
+						"3",
+						""
+					]
+				},
+				"description": "O método PUT substitiu qualquer deve dentro da lista pelo ID, e retorna o resultado!"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/dev/3/",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/dev/3/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"dev",
+						"3",
+						""
+					]
+				},
+				"description": "O método DELETE exclui qualquer desenvolvedor dentro da lista pelo ID"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/manager/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/manager/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"manager",
+						""
+					]
+				},
+				"description": "Retorna todos os Devs dentro da lista!"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/manager/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Marcos\",\r\n    \"idade\": 40,\r\n    \"habilidades\": [\r\n        \"Python\",\r\n        \"Automação\",\r\n        \"Deep Learning\",\r\n        \"Machine Learning\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/manager/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"manager",
+						""
+					]
+				},
+				"description": "Inseri um desenvolvedor na lista, já incrementando o 'ID'!"
+			},
+			"response": []
+		}
+	]
+}

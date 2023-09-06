@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "4f663e40-7362-44be-8abc-a96507b838e2",
+		"name": "EX_1_API_Gerenciamento_De_Cadastros",
+		"description": "_**Esses dados testam a criação da minha API em flask, que é um exercício proposto pelo professor!**_",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16632138"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:5000/tarefa/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/tarefa/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"tarefa",
+						""
+					]
+				},
+				"description": "O método GET aqui retorna todas as tarefas da lista tarefas junto com os seus dados!"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/tarefa/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"id\": 5,\r\n\"responsavel\": \"Zoro\",\r\n\"status\": \"Não - Concluído\",\r\n\"tarefa\": \"Ser o maior espadachim do mundo!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/tarefa/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"tarefa",
+						""
+					]
+				},
+				"description": "O método POST aqui dentro da função tarefas, adiciona uma nova tarefa e um responsável por ela como outros dados a respeito, e também retorna uma mensagem de sucesso, se der errado o erro é tratado no código python!"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/5/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/5/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"5",
+						""
+					]
+				},
+				"description": "O método GET aqui retorna somente uma tarefa com o respectivo responsável, e no caso é o último a ser adicionado a lista tarefa!"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/5/",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"id\": 5,\r\n\"responsavel\": \"Zoro\",\r\n\"status\": \"Concluído\",\r\n\"tarefa\": \"beber\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/5/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"5",
+						""
+					]
+				},
+				"description": "O método PUT atualiza o campos status, e só permite atualizar esse campo dentro da tarefa, nenhuma outra atualização em outro campo ocorrerá!"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/5/",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/5/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"5",
+						""
+					]
+				},
+				"description": "Esse método \"DELETE\" deleta o ultimo usuário colocado, ou o usuário selecionado pelo \"ID\""
+			},
+			"response": []
+		}
+	]
+}

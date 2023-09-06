@@ -1,0 +1,171 @@
+{
+	"info": {
+		"_postman_id": "dd3c54e9-717f-41c5-b3ea-3d13faabfb77",
+		"name": "Testes:",
+		"description": "_**Criando uma REST API com Flask:**_",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16632138"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:5000/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"1"
+					]
+				},
+				"description": "Teste do método http GET da API flask"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/1/",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"id\": 1,\r\n\"name\": \"Alexandre\",\r\n\"idade\": 67,\r\n\"habilidades\": [\r\n    \"Python\",\r\n    \"Machine Learning\",\r\n    \"Deep Learning\",\r\n    \"SQL\",\r\n    \"FullStack\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"1",
+						""
+					]
+				},
+				"description": "teste do método PUT da API flask"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/4/dev/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"id\": 4,\r\n\"name\": \"João\",\r\n\"idade\": 60,\r\n\"habilidades\": [\r\n    \"AgroDev\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/4/dev/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"4",
+						"dev",
+						""
+					]
+				},
+				"description": "teste do método http POST da API flask"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/1/",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"1",
+						""
+					]
+				},
+				"description": "teste do método http DELETE da API flask"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/<Aqui pode ser qualquer número>/dev/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/<Aqui pode ser qualquer número>/dev/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"<Aqui pode ser qualquer número>",
+						"dev",
+						""
+					]
+				},
+				"description": "teste do método http GET da API flask, esse GET retorna todos os desenvolvedores dentro da lista!"
+			},
+			"response": []
+		}
+	]
+}
